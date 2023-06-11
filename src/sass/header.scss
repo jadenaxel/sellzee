@@ -39,6 +39,10 @@ header {
 						font-weight: 200;
 						color: rgb(219, 219, 219);
 						font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+
+                        @include break(915px) {
+                            font-size: clamp(100%, 16px, 16px);
+                        }
 					}
 					.active {
 						color: white;
