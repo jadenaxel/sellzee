@@ -1,0 +1,23 @@
+$primary-color: #ff5a05;
+
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 1200px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+@mixin break($point) {
+	@media (max-width: $point) {
+		@content;
+	}
+}
+
+@import "./header";
