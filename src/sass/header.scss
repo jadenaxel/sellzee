@@ -40,9 +40,9 @@ header {
 						color: rgb(219, 219, 219);
 						font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
 
-                        @include break(915px) {
-                            font-size: clamp(100%, 16px, 16px);
-                        }
+						@include break(915px) {
+							font-size: clamp(100%, 16px, 16px);
+						}
 					}
 					.active {
 						color: white;
@@ -124,6 +124,11 @@ header {
 					font-size: clamp(100%, 20px, 20px);
 
 					cursor: pointer;
+
+                    @include break(915px){
+                        width: 130px;
+                        margin-bottom: 30px;
+                    }
 
 					&:first-child {
 						background-color: #ff5a05;
@@ -363,7 +368,7 @@ footer {
 	.footer_content {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(277.5px, 1fr));
-        gap: 30px;
+		gap: 30px;
 		color: white;
 		&_brand {
 			& > img {
